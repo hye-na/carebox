@@ -1,50 +1,73 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding:0;
+    
+}
+
 nav {
-    background-color: black;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    position: fixed;
+
+    
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2;    
+}
+
+main {
+    margin: 0 auto;
+    padding-top: 5%;
 }
 
 h1 {
+    text-align: center;
     color: grey;
     margin-left: 5%;
 }
 
-nav, main {
+/* nav, main {
     margin: 2%;
-}
+} */
 
 .gallery {
-    margin: 0 auto;
-    margin: 0 10% 0 10%;
-    padding: 0.1em;
+    margin: 0% 10% 0 10%;
+    text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 img {
     height: 18em;
     width: 18em;
     margin: 0.5em;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0,0,0,0.20);
+      
+}
+
+img:hover {
+    opacity: 0.75;
 }
 
 
 /* dropdown nav */
 
-  
-  nav {
-      font-family: roboto;
-      margin: 2%;
-  }
+
 
 a {
     text-decoration: none;
   }
 
-  li a {
+  /* li a {
     color: rgb(196, 83, 83);
   }
   
-  ul {
+  .dropdown {
     background: #d1b086;
     list-style: none;
       margin: 0;
@@ -64,7 +87,7 @@ a {
     
   
   li:hover {
-      background: white;
+      background: #f2f2f2;
       cursor: pointer;
   }
   
@@ -90,4 +113,4 @@ a {
   ul li ul li {
       clear: both;
     width: 100%;
-  }
+  } */
