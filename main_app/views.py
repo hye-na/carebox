@@ -3,6 +3,7 @@ from .forms import LoginForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from django.views import generic
+from .models import Product
 
 # Create your views here.
 
@@ -11,8 +12,13 @@ def home(request):
     return render(request, 'home.html')
 
 
-def products(request):
+def product_view(request):
     return render(request, 'products.html')
+
+
+def product_detail(request, product_id):
+    product = Product.objects.get(id=product_id)
+    return render(request, 'product_detail.html', {'product': product})
 
 
 def login_view(request):

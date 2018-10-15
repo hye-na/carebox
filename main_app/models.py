@@ -29,6 +29,7 @@ class Product(models.Model):
     name = models.CharField(max_length=60)
     description = models.TextField(max_length=250)
     price = models.IntegerField()
+    # orders = models.ManyToManyField()
     category = models.CharField(
         max_length=1,
         choices=CATEGORIES,

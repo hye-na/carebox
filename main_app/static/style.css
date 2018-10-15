@@ -5,37 +5,11 @@
     
 }
 
-nav {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    position: fixed;
+a {
+    text-decoration: none;
+  }
 
-    
-}
-
-body {
-    background-color: #f2f2f2;    
-}
-
-main {
-    margin: 0 auto;
-    padding-top: 5%;
-}
-
-h1 {
-    text-align: center;
-    color: grey;
-    margin-left: 5%;
-}
-
-/* nav, main {
-    margin: 2%;
-} */
-
-.gallery {
+  .gallery {
     margin: 0% 10% 0 10%;
     text-align: center;
     width: 80%;
@@ -55,62 +29,33 @@ img:hover {
 }
 
 
-/* dropdown nav */
+/* 
+main {
+    margin-top: 80%;
+} */
 
+.login {
+    margin: 0 auto;
+}
 
+.navi {
+    display: flex;
+    padding: 1% 0 1% 1%;
+    margin: 1% 0 0 1%
+}
 
-a {
-    text-decoration: none;
-  }
+ul {
+  padding: 0;
+  list-style: none;
+}
 
-  /* li a {
-    color: rgb(196, 83, 83);
-  }
-  
-  .dropdown {
-    background: #d1b086;
-    list-style: none;
-      margin: 0;
-      padding-left: 0;
-  }
-  
-  li {
-    color: #fff;
-    background: #d1b086;
-    display: block;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    text-decoration: none;
-    transition-duration: 0.5s;
-  }
-    
-  
-  li:hover {
-      background: #f2f2f2;
-      cursor: pointer;
-  }
-  
-  ul li ul {
-      background: orange;
-      visibility: hidden;
-    opacity: 0;
-    min-width: 5rem;
-      position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-      left: 0;
-    display: none;
-  }
-  
-  ul li:hover > ul,
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-  
-  ul li ul li {
-      clear: both;
-    width: 100%;
-  } */
+li {
+padding: 1%;  
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
