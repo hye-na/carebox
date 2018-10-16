@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Product Detail</h1>
+
+<img src="{{product.img_url}}">
+<p> Name: {{product.name}}</p>
+<p> Description: {{ product.description}}</p>
+<p> Price: {{ product.price }}</p>
+<a class="button" href= "#"> Add to Box </a>
+
+{% endblock %}

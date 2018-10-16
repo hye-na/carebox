@@ -29,7 +29,8 @@ class Product(models.Model):
     name = models.CharField(max_length=60)
     description = models.TextField(max_length=250)
     price = models.IntegerField()
-    # orders = models.ManyToManyField()
+    img_url = models.CharField(
+        max_length=200, default="https://picsum.photos/200/300/?random")
     category = models.CharField(
         max_length=1,
         choices=CATEGORIES,
@@ -48,3 +49,12 @@ class Order(models.Model):
 
     def __str__(self):
         return self.id
+
+
+# class Post(models.Model):
+#     message = models.TextField(max_length=4000)
+#     topic = models.ForeignKey(Product, related_name='posts')
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(null=True)
+#     created_by = models.ForeignKey(User, related_name='posts')
+#     updated_by = models.ForeignKey(User, null=True, related_name='+')
